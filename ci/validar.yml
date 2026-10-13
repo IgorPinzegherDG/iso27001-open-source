@@ -1,0 +1,34 @@
+name: validar
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Semanal: pega link que morreu sem ninguém mexer no repositório.
+    - cron: "0 9 * * 1"
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Documentação está em dia com o YAML
+        run: |
+          python3 scripts/gerar.py
+          if ! git diff --quiet; then
+            echo "Os arquivos gerados divergem de dados/controles.yaml."
+            echo "Rode 'python3 scripts/gerar.py' e inclua o resultado no commit."
+            git diff --stat
+            exit 1
+          fi
+
+      - name: Todos os links respondem
+        run: python3 scripts/validar_links.py | tee saida.txt && ! grep -q "\[" saida.txt

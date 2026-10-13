@@ -79,6 +79,10 @@ python3 scripts/gerar.py
 python3 scripts/validar_links.py
 ```
 
+A verificação automática desses dois passos está pronta em
+[ci/validar.yml](ci/validar.yml), à espera de ser movida para
+`.github/workflows/`. O [ci/README.md](ci/README.md) explica.
+
 ## Contribuindo
 
 Correções e novas indicações são bem-vindas, principalmente para os controles
