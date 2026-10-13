@@ -34,6 +34,12 @@ ARQUIVOS = {
 }
 
 
+def ordem_controle(cid):
+    """Ordena A.5.9 antes de A.5.32, que a ordenação por texto inverte."""
+    partes = cid.replace("A.", "").split(".")
+    return tuple(int(p) if p.isdigit() else 0 for p in partes)
+
+
 def ancora(texto):
     """Âncora no formato que o GitHub gera para um título."""
     limpo = re.sub(r"[^\w\s-]", "", texto.lower(), flags=re.UNICODE)
@@ -100,7 +106,7 @@ def gerar_indice_ferramentas(doc):
     ordenado = sorted(por_ferramenta.items(),
                       key=lambda kv: (-len(kv[1]["controles"]), kv[0].lower()))
     for nome, reg in ordenado:
-        ctrls = ", ".join(sorted(set(reg["controles"])))
+        ctrls = ", ".join(sorted(set(reg["controles"]), key=ordem_controle))
         linhas.append(f"| [{nome}]({reg['url']}) | {reg['licenca']} | {ctrls} "
                       f"| {len(set(reg['controles']))} |")
     linhas.append("")

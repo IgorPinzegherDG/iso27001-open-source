@@ -12,33 +12,33 @@ cobrem muita coisa de uma vez.
 
 | Ferramenta | Licença | Controles | Quantos |
 |---|---|---|---|
-| [Snipe-IT](https://snipeitapp.com/) | AGPL-3.0 | A.5.10, A.5.11, A.5.32, A.5.9, A.6.5, A.7.10, A.7.13, A.7.14, A.7.8, A.7.9 | 10 |
-| [Wazuh](https://wazuh.com/) | GPL-2.0 | A.5.25, A.5.36, A.7.7, A.8.1, A.8.12, A.8.16, A.8.34, A.8.7 | 8 |
-| [Eramba Community](https://www.eramba.org/) | AGPL-3.0 | A.5.1, A.5.19, A.5.2, A.5.22, A.5.27, A.5.31, A.5.4 | 7 |
-| [GLPI](https://glpi-project.org/) | GPL-3.0 | A.5.11, A.5.19, A.5.9, A.6.8, A.7.13, A.7.2, A.8.32 | 7 |
-| [Keycloak](https://www.keycloak.org/) | Apache-2.0 | A.5.15, A.5.16, A.5.18, A.5.3, A.8.3, A.8.31, A.8.5 | 7 |
-| [Zabbix](https://www.zabbix.com/) | AGPL-3.0 | A.5.22, A.7.11, A.7.5, A.8.17, A.8.34, A.8.6 | 6 |
-| [Ansible](https://www.ansible.com/) | GPL-3.0 | A.5.30, A.5.37, A.7.7, A.8.19, A.8.9 | 5 |
-| [Documenso](https://documenso.com/) | AGPL-3.0 | A.5.10, A.5.20, A.5.4, A.6.2, A.6.6 | 5 |
+| [Snipe-IT](https://snipeitapp.com/) | AGPL-3.0 | A.5.9, A.5.10, A.5.11, A.5.32, A.6.5, A.7.8, A.7.9, A.7.10, A.7.13, A.7.14 | 10 |
+| [Wazuh](https://wazuh.com/) | GPL-2.0 | A.5.25, A.5.36, A.7.7, A.8.1, A.8.7, A.8.12, A.8.16, A.8.34 | 8 |
+| [Eramba Community](https://www.eramba.org/) | AGPL-3.0 | A.5.1, A.5.2, A.5.4, A.5.19, A.5.22, A.5.27, A.5.31 | 7 |
+| [GLPI](https://glpi-project.org/) | GPL-3.0 | A.5.9, A.5.11, A.5.19, A.6.8, A.7.2, A.7.13, A.8.32 | 7 |
+| [Keycloak](https://www.keycloak.org/) | Apache-2.0 | A.5.3, A.5.15, A.5.16, A.5.18, A.8.3, A.8.5, A.8.31 | 7 |
+| [Zabbix](https://www.zabbix.com/) | AGPL-3.0 | A.5.22, A.7.5, A.7.11, A.8.6, A.8.17, A.8.34 | 6 |
+| [Ansible](https://www.ansible.com/) | GPL-3.0 | A.5.30, A.5.37, A.7.7, A.8.9, A.8.19 | 5 |
+| [Documenso](https://documenso.com/) | AGPL-3.0 | A.5.4, A.5.10, A.5.20, A.6.2, A.6.6 | 5 |
 | [Mayan EDMS](https://www.mayan-edms.com/) | Apache-2.0 | A.5.13, A.5.20, A.5.33, A.6.6, A.8.10 | 5 |
-| [NetBox](https://netboxlabs.com/oss/netbox/) | Apache-2.0 | A.5.9, A.7.1, A.7.12, A.7.3, A.7.8 | 5 |
-| [Teleport](https://goteleport.com/) | AGPL-3.0 | A.5.18, A.6.7, A.8.18, A.8.2, A.8.34 | 5 |
+| [NetBox](https://netboxlabs.com/oss/netbox/) | Apache-2.0 | A.5.9, A.7.1, A.7.3, A.7.8, A.7.12 | 5 |
+| [Teleport](https://goteleport.com/) | AGPL-3.0 | A.5.18, A.6.7, A.8.2, A.8.18, A.8.34 | 5 |
 | [Wiki.js](https://js.wiki/) | AGPL-3.0 | A.5.1, A.5.10, A.5.27, A.5.37, A.7.6 | 5 |
 | [Home Assistant](https://www.home-assistant.io/) | Apache-2.0 | A.7.1, A.7.2, A.7.3, A.7.5 | 4 |
 | [OrangeHRM](https://www.orangehrm.com/) | GPL-2.0 | A.5.2, A.6.1, A.6.2, A.6.4 | 4 |
 | [osquery + Fleet](https://fleetdm.com/) | MIT | A.5.36, A.7.7, A.8.1, A.8.19 | 4 |
-| [TheHive](https://strangebee.com/thehive/) | AGPL-3.0 | A.5.24, A.5.26, A.5.5, A.6.8 | 4 |
+| [TheHive](https://strangebee.com/thehive/) | AGPL-3.0 | A.5.5, A.5.24, A.5.26, A.6.8 | 4 |
 | [Zammad](https://zammad.com/) | AGPL-3.0 | A.5.5, A.6.4, A.6.8, A.8.32 | 4 |
-| [Apache Syncope](https://syncope.apache.org/) | Apache-2.0 | A.5.16, A.5.3, A.6.5 | 3 |
-| [DefectDojo](https://www.defectdojo.org/) | BSD-3-Clause | A.8.26, A.8.29, A.8.8 | 3 |
+| [Apache Syncope](https://syncope.apache.org/) | Apache-2.0 | A.5.3, A.5.16, A.6.5 | 3 |
+| [DefectDojo](https://www.defectdojo.org/) | BSD-3-Clause | A.8.8, A.8.26, A.8.29 | 3 |
 | [Microsoft Presidio](https://microsoft.github.io/presidio/) | MIT | A.5.34, A.8.11, A.8.33 | 3 |
 | [midPoint](https://evolveum.com/midpoint/) | Apache-2.0 | A.5.16, A.5.18, A.6.5 | 3 |
-| [Open Policy Agent](https://www.openpolicyagent.org/) | Apache-2.0 | A.5.15, A.5.3, A.8.3 | 3 |
+| [Open Policy Agent](https://www.openpolicyagent.org/) | Apache-2.0 | A.5.3, A.5.15, A.8.3 | 3 |
 | [OpenMetadata](https://open-metadata.org/) | Apache-2.0 | A.5.12, A.5.13, A.5.34 | 3 |
 | [OpenSCAP](https://www.open-scap.org/) | LGPL-2.1 | A.5.35, A.5.36, A.8.9 | 3 |
 | [Proxmox VE](https://www.proxmox.com/) | AGPL-3.0 | A.5.29, A.8.14, A.8.31 | 3 |
 | [Restic](https://restic.net/) | BSD-2-Clause | A.5.29, A.5.33, A.8.13 | 3 |
-| [SimpleRisk](https://www.simplerisk.com/) | MPL-2.0 | A.5.19, A.5.2, A.5.31 | 3 |
+| [SimpleRisk](https://www.simplerisk.com/) | MPL-2.0 | A.5.2, A.5.19, A.5.31 | 3 |
 | [age](https://github.com/FiloSottile/age) | BSD-3-Clause | A.5.14, A.8.24 | 2 |
 | [Authentik](https://goauthentik.io/) | MIT | A.5.15, A.8.5 | 2 |
 | [Bacula](https://www.bacula.org/) | AGPL-3.0 | A.5.30, A.8.13 | 2 |
@@ -46,8 +46,8 @@ cobrem muita coisa de uma vez.
 | [Docuseal](https://www.docuseal.com/) | AGPL-3.0 | A.5.20, A.6.2 | 2 |
 | [FreeIPA](https://www.freeipa.org/) | GPL-3.0 | A.5.15, A.8.2 | 2 |
 | [Frigate](https://frigate.video/) | MIT | A.7.4, A.7.6 | 2 |
-| [Gitea](https://about.gitea.com/) | MIT | A.8.30, A.8.4 | 2 |
-| [GitLab CE](https://gitlab.com/gitlab-org/gitlab-foss) | MIT | A.8.25, A.8.4 | 2 |
+| [Gitea](https://about.gitea.com/) | MIT | A.8.4, A.8.30 | 2 |
+| [GitLab CE](https://gitlab.com/gitlab-org/gitlab-foss) | MIT | A.8.4, A.8.25 | 2 |
 | [Graylog](https://graylog.org/) | SSPL/GPL-3.0 | A.5.25, A.8.15 | 2 |
 | [Grype](https://github.com/anchore/grype) | Apache-2.0 | A.5.21, A.8.8 | 2 |
 | [IRIS](https://dfir-iris.org/) | LGPL-3.0 | A.5.24, A.5.27 | 2 |
@@ -55,13 +55,13 @@ cobrem muita coisa de uma vez.
 | [LUKS / cryptsetup](https://gitlab.com/cryptsetup/cryptsetup) | GPL-2.0 | A.7.9, A.8.1 | 2 |
 | [Mattermost](https://mattermost.com/) | AGPL-3.0 | A.5.14, A.6.3 | 2 |
 | [MISP](https://www.misp-project.org/) | AGPL-3.0 | A.5.6, A.5.7 | 2 |
-| [Nuclei](https://github.com/projectdiscovery/nuclei) | MIT | A.8.29, A.8.8 | 2 |
-| [NUT (Network UPS Tools)](https://networkupstools.org/) | GPL-2.0 | A.7.11, A.7.5 | 2 |
+| [Nuclei](https://github.com/projectdiscovery/nuclei) | MIT | A.8.8, A.8.29 | 2 |
+| [NUT (Network UPS Tools)](https://networkupstools.org/) | GPL-2.0 | A.7.5, A.7.11 | 2 |
 | [nwipe](https://github.com/martijnvanbrummelen/nwipe) | GPL-2.0 | A.7.14, A.8.10 | 2 |
 | [OpenBao](https://openbao.org/) | MPL-2.0 | A.5.17, A.8.24 | 2 |
 | [OpenCTI](https://filigran.io/solutions/open-cti/) | Apache-2.0 | A.5.6, A.5.7 | 2 |
-| [OpenTofu](https://opentofu.org/) | MPL-2.0 | A.8.31, A.8.9 | 2 |
-| [OpenVAS / Greenbone](https://www.greenbone.net/) | GPL-2.0 | A.8.34, A.8.8 | 2 |
+| [OpenTofu](https://opentofu.org/) | MPL-2.0 | A.8.9, A.8.31 | 2 |
+| [OpenVAS / Greenbone](https://www.greenbone.net/) | GPL-2.0 | A.8.8, A.8.34 | 2 |
 | [OPNsense](https://opnsense.org/) | BSD-2-Clause | A.8.20, A.8.22 | 2 |
 | [PostgreSQL Anonymizer](https://postgresql-anonymizer.readthedocs.io/) | PostgreSQL | A.8.11, A.8.33 | 2 |
 | [privacyIDEA](https://privacyidea.org/) | AGPL-3.0 | A.5.17, A.8.5 | 2 |
@@ -70,7 +70,7 @@ cobrem muita coisa de uma vez.
 | [Semgrep](https://semgrep.dev/) | LGPL-2.1 | A.8.28, A.8.30 | 2 |
 | [step-ca](https://smallstep.com/docs/step-ca/) | Apache-2.0 | A.8.21, A.8.24 | 2 |
 | [Syft](https://github.com/anchore/syft) | Apache-2.0 | A.5.21, A.5.32 | 2 |
-| [Trivy](https://trivy.dev/) | Apache-2.0 | A.8.29, A.8.8 | 2 |
+| [Trivy](https://trivy.dev/) | Apache-2.0 | A.8.8, A.8.29 | 2 |
 | [USBGuard](https://usbguard.github.io/) | GPL-2.0 | A.7.10, A.8.1 | 2 |
 | [Velero](https://velero.io/) | Apache-2.0 | A.5.30, A.8.13 | 2 |
 | [Velociraptor](https://docs.velociraptor.app/) | AGPL-3.0 | A.5.26, A.5.28 | 2 |
