@@ -1,0 +1,1636 @@
+# Fonte de verdade deste repositório.
+# Os arquivos em controles/ e ferramentas/ são gerados por
+# scripts/gerar.py a partir deste arquivo. Edite aqui, não lá.
+
+versao_norma: ISO/IEC 27001:2022 (Anexo A) / ISO/IEC 27002:2022
+temas:
+  - id: A.5
+    nome: Controles organizacionais
+    controles:
+      - id: A.5.1
+        titulo: Políticas de segurança da informação
+        objetivo: Manter um conjunto de políticas aprovado pela direção, publicado para quem precisa cumprir
+          e revisado em intervalos definidos.
+        ferramentas:
+          - nome: Wiki.js
+            url: https://js.wiki/
+            licenca: AGPL-3.0
+            nota: versiona a política, registra quem leu e quando, e mantém o histórico de revisão que
+              o auditor pede
+          - nome: BookStack
+            url: https://www.bookstackapp.com/
+            licenca: MIT
+            nota: alternativa mais simples, com organização por prateleira e livro
+          - nome: Eramba Community
+            url: https://www.eramba.org/
+            licenca: AGPL-3.0
+            nota: GRC que trata política como objeto com dono, ciclo de revisão e aceite registrado
+      - id: A.5.2
+        titulo: Papéis e responsabilidades pela segurança da informação
+        objetivo: Definir e atribuir formalmente quem responde por cada atividade de segurança.
+        ferramentas:
+          - nome: Eramba Community
+            url: https://www.eramba.org/
+            licenca: AGPL-3.0
+            nota: mantém matriz de responsabilidade ligada a políticas, riscos e controles
+          - nome: SimpleRisk
+            url: https://www.simplerisk.com/
+            licenca: MPL-2.0
+            nota: atribui dono a risco e a plano de tratamento
+          - nome: OrangeHRM
+            url: https://www.orangehrm.com/
+            licenca: GPL-2.0
+            nota: descrição de cargo e organograma, que é onde a responsabilidade formal costuma morar
+      - id: A.5.3
+        titulo: Segregação de funções
+        objetivo: Separar atividades conflitantes para que ninguém execute e aprove a mesma coisa sozinho.
+        ferramentas:
+          - nome: Keycloak
+            url: https://www.keycloak.org/
+            licenca: Apache-2.0
+            nota: papéis e grupos que permitem separar quem solicita de quem aprova
+          - nome: Open Policy Agent
+            url: https://www.openpolicyagent.org/
+            licenca: Apache-2.0
+            nota: escreve a regra de segregação como código e a aplica em pipeline e API
+          - nome: Apache Syncope
+            url: https://syncope.apache.org/
+            licenca: Apache-2.0
+            nota: governança de identidade com detecção de conflito de atribuição
+      - id: A.5.4
+        titulo: Responsabilidades da direção
+        objetivo: Assegurar que a direção exija de todos a aplicação da segurança conforme as políticas.
+        ferramentas:
+          - nome: Eramba Community
+            url: https://www.eramba.org/
+            licenca: AGPL-3.0
+            nota: registra aceite de política por colaborador, que é a evidência de cobrança
+          - nome: Documenso
+            url: https://documenso.com/
+            licenca: AGPL-3.0
+            nota: assinatura eletrônica de termos e políticas com trilha de auditoria
+      - id: A.5.5
+        titulo: Contato com autoridades
+        objetivo: Manter canais definidos com autoridades competentes, acionáveis em incidente.
+        ferramentas:
+          - nome: TheHive
+            url: https://strangebee.com/thehive/
+            licenca: AGPL-3.0
+            nota: caso de incidente com tarefas que incluem a notificação à autoridade e o prazo
+          - nome: Zammad
+            url: https://zammad.com/
+            licenca: AGPL-3.0
+            nota: registra o contato e a resposta como ticket rastreável
+      - id: A.5.6
+        titulo: Contato com grupos de interesse especial
+        objetivo: Participar de fóruns e comunidades técnicas para acompanhar ameaças e boas práticas.
+        ferramentas:
+          - nome: MISP
+            url: https://www.misp-project.org/
+            licenca: AGPL-3.0
+            nota: participação em comunidades de compartilhamento é o próprio contato previsto
+          - nome: OpenCTI
+            url: https://filigran.io/solutions/open-cti/
+            licenca: Apache-2.0
+            nota: conecta a feeds e comunidades e documenta a origem de cada informação
+      - id: A.5.7
+        titulo: Inteligência de ameaças
+        objetivo: Coletar e analisar informação sobre ameaças e transformá-la em ação.
+        ferramentas:
+          - nome: OpenCTI
+            url: https://filigran.io/solutions/open-cti/
+            licenca: Apache-2.0
+            nota: plataforma de inteligência com modelo STIX e ligação entre ator, técnica e indicador
+          - nome: MISP
+            url: https://www.misp-project.org/
+            licenca: AGPL-3.0
+            nota: compartilhamento de indicadores e correlação automática
+          - nome: Yeti
+            url: https://yeti-platform.github.io/
+            licenca: Apache-2.0
+            nota: mais leve, bom para começar
+      - id: A.5.8
+        titulo: Segurança da informação na gestão de projetos
+        objetivo: Tratar requisitos de segurança dentro do ciclo de qualquer projeto, não depois dele.
+        ferramentas:
+          - nome: OpenProject
+            url: https://www.openproject.org/
+            licenca: GPL-3.0
+            nota: modelo de projeto com fases e entregas obrigatórias de segurança
+          - nome: Redmine
+            url: https://www.redmine.org/
+            licenca: GPL-2.0
+            nota: fluxo configurável com campo de avaliação de risco por projeto
+          - nome: Taiga
+            url: https://taiga.io/
+            licenca: MPL-2.0
+            nota: ágil, com critério de pronto que inclui segurança
+      - id: A.5.9
+        titulo: Inventário de informações e outros ativos associados
+        objetivo: Manter inventário de ativos com dono identificado.
+        ferramentas:
+          - nome: Snipe-IT
+            url: https://snipeitapp.com/
+            licenca: AGPL-3.0
+            nota: inventário com responsável, ciclo de vida e termo de responsabilidade
+          - nome: GLPI
+            url: https://glpi-project.org/
+            licenca: GPL-3.0
+            nota: inventário com descoberta automática de rede e vínculo a chamados
+          - nome: NetBox
+            url: https://netboxlabs.com/oss/netbox/
+            licenca: Apache-2.0
+            nota: fonte de verdade de infraestrutura, endereçamento e racks
+          - nome: osquery
+            url: https://www.osquery.io/
+            licenca: Apache-2.0/GPL-2.0
+            nota: levanta software e hardware da frota por consulta SQL
+      - id: A.5.10
+        titulo: Uso aceitável de informações e outros ativos associados
+        objetivo: Definir e comunicar as regras de uso dos ativos, com aceite registrado.
+        ferramentas:
+          - nome: Documenso
+            url: https://documenso.com/
+            licenca: AGPL-3.0
+            nota: coleta aceite assinado da política de uso
+          - nome: Wiki.js
+            url: https://js.wiki/
+            licenca: AGPL-3.0
+            nota: publica a regra vigente com histórico
+          - nome: Snipe-IT
+            url: https://snipeitapp.com/
+            licenca: AGPL-3.0
+            nota: vincula o aceite ao ativo entregue à pessoa
+      - id: A.5.11
+        titulo: Devolução de ativos
+        objetivo: Garantir a devolução dos ativos no encerramento do vínculo ou contrato.
+        ferramentas:
+          - nome: Snipe-IT
+            url: https://snipeitapp.com/
+            licenca: AGPL-3.0
+            nota: check-in e check-out por pessoa, com pendências visíveis no desligamento
+          - nome: GLPI
+            url: https://glpi-project.org/
+            licenca: GPL-3.0
+            nota: mesma função dentro de um service desk
+      - id: A.5.12
+        titulo: Classificação da informação
+        objetivo: Classificar a informação conforme valor, criticidade e requisitos legais.
+        ferramentas:
+          - nome: Apache Tika
+            url: https://tika.apache.org/
+            licenca: Apache-2.0
+            nota: extrai conteúdo para apoiar a classificação automática
+          - nome: OpenMetadata
+            url: https://open-metadata.org/
+            licenca: Apache-2.0
+            nota: catálogo de dados com rótulo de sensibilidade e linhagem
+          - nome: DataHub
+            url: https://datahubproject.io/
+            licenca: Apache-2.0
+            nota: alternativa com governança e glossário de termos
+      - id: A.5.13
+        titulo: Rotulagem de informações
+        objetivo: Aplicar rótulos coerentes com o esquema de classificação adotado.
+        ferramentas:
+          - nome: Mayan EDMS
+            url: https://www.mayan-edms.com/
+            licenca: Apache-2.0
+            nota: gestão documental com metadados e rótulo obrigatório
+          - nome: Paperless-ngx
+            url: https://github.com/paperless-ngx/paperless-ngx
+            licenca: GPL-3.0
+            nota: etiquetagem automática de documentos digitalizados
+          - nome: OpenMetadata
+            url: https://open-metadata.org/
+            licenca: Apache-2.0
+            nota: rotula coluna e tabela em base de dados
+      - id: A.5.14
+        titulo: Transferência de informações
+        objetivo: Proteger a informação em trânsito, por qualquer meio e com qualquer parte.
+        ferramentas:
+          - nome: Nextcloud
+            url: https://nextcloud.com/
+            licenca: AGPL-3.0
+            nota: compartilhamento com validade, senha e registro de acesso
+          - nome: Lufi
+            url: https://framagit.org/fiat-tux/hat-and-coat/lufi
+            licenca: AGPL-3.0
+            nota: envio de arquivo com criptografia no navegador
+          - nome: age
+            url: https://github.com/FiloSottile/age
+            licenca: BSD-3-Clause
+            nota: criptografia de arquivo simples, boa para troca pontual
+          - nome: Mattermost
+            url: https://mattermost.com/
+            licenca: AGPL-3.0/Apache-2.0
+            nota: mensageria interna sob seu controle, com retenção definida
+      - id: A.5.15
+        titulo: Controle de acesso
+        objetivo: Estabelecer e aplicar regras de acesso físico e lógico com base no negócio.
+        ferramentas:
+          - nome: Keycloak
+            url: https://www.keycloak.org/
+            licenca: Apache-2.0
+            nota: autenticação e autorização centralizadas com SSO
+          - nome: Authentik
+            url: https://goauthentik.io/
+            licenca: MIT
+            nota: IdP moderno com fluxo de autorização visual
+          - nome: FreeIPA
+            url: https://www.freeipa.org/
+            licenca: GPL-3.0
+            nota: identidade e política de acesso para frota Linux
+          - nome: Open Policy Agent
+            url: https://www.openpolicyagent.org/
+            licenca: Apache-2.0
+            nota: decisão de autorização como código
+      - id: A.5.16
+        titulo: Gestão de identidade
+        objetivo: Gerenciar o ciclo de vida completo das identidades, da criação à remoção.
+        ferramentas:
+          - nome: Keycloak
+            url: https://www.keycloak.org/
+            licenca: Apache-2.0
+            nota: diretório de identidades com federação
+          - nome: Apache Syncope
+            url: https://syncope.apache.org/
+            licenca: Apache-2.0
+            nota: provisionamento e desprovisionamento automático entre sistemas
+          - nome: midPoint
+            url: https://evolveum.com/midpoint/
+            licenca: Apache-2.0
+            nota: governança de identidade com recertificação de acesso
+      - id: A.5.17
+        titulo: Informação de autenticação
+        objetivo: Controlar a alocação e o uso de senhas, chaves e outros segredos de autenticação.
+        ferramentas:
+          - nome: Vaultwarden
+            url: https://github.com/dani-garcia/vaultwarden
+            licenca: AGPL-3.0
+            nota: cofre de senhas corporativo leve, compatível com clientes Bitwarden
+          - nome: Passbolt
+            url: https://www.passbolt.com/
+            licenca: AGPL-3.0
+            nota: cofre com compartilhamento por grupo e trilha de auditoria
+          - nome: HashiCorp Vault
+            url: https://github.com/hashicorp/vault
+            licenca: BUSL-1.1 (não OSI)
+            nota: segredos com rotação; a licença deixou de ser livre em 2023, prefira o OpenBao
+          - nome: OpenBao
+            url: https://openbao.org/
+            licenca: MPL-2.0
+            nota: derivação do Vault mantida pela Linux Foundation
+          - nome: privacyIDEA
+            url: https://privacyidea.org/
+            licenca: AGPL-3.0
+            nota: segundo fator com token físico ou OTP
+      - id: A.5.18
+        titulo: Direitos de acesso
+        objetivo: Conceder, revisar e revogar direitos de acesso ao longo do tempo.
+        ferramentas:
+          - nome: midPoint
+            url: https://evolveum.com/midpoint/
+            licenca: Apache-2.0
+            nota: campanha de recertificação periódica, que é a evidência da análise crítica
+          - nome: Keycloak
+            url: https://www.keycloak.org/
+            licenca: Apache-2.0
+            nota: revogação central e imediata
+          - nome: Teleport
+            url: https://goteleport.com/
+            licenca: AGPL-3.0
+            nota: acesso a servidor e banco com aprovação e expiração automática
+      - id: A.5.19
+        titulo: Segurança da informação nas relações com fornecedores
+        objetivo: Definir e aplicar requisitos de segurança para o relacionamento com fornecedores.
+        ferramentas:
+          - nome: Eramba Community
+            url: https://www.eramba.org/
+            licenca: AGPL-3.0
+            nota: cadastro de terceiro com risco, contrato e revisão periódica
+          - nome: SimpleRisk
+            url: https://www.simplerisk.com/
+            licenca: MPL-2.0
+            nota: avaliação de risco de fornecedor
+          - nome: GLPI
+            url: https://glpi-project.org/
+            licenca: GPL-3.0
+            nota: contratos e fornecedores ligados aos ativos que eles sustentam
+      - id: A.5.20
+        titulo: Contemplar a segurança da informação nos acordos com fornecedores
+        objetivo: Levar os requisitos de segurança para dentro do contrato assinado.
+        ferramentas:
+          - nome: Documenso
+            url: https://documenso.com/
+            licenca: AGPL-3.0
+            nota: assinatura com trilha de auditoria e versão do anexo de segurança
+          - nome: Docuseal
+            url: https://www.docuseal.com/
+            licenca: AGPL-3.0
+            nota: alternativa com modelos reutilizáveis
+          - nome: Mayan EDMS
+            url: https://www.mayan-edms.com/
+            licenca: Apache-2.0
+            nota: guarda contratual com vencimento e lembrete
+      - id: A.5.21
+        titulo: Gestão da segurança da informação na cadeia de fornecimento de TIC
+        objetivo: Tratar o risco que entra pela cadeia de produtos e serviços de TIC.
+        ferramentas:
+          - nome: Syft
+            url: https://github.com/anchore/syft
+            licenca: Apache-2.0
+            nota: gera SBOM do que você consome de terceiros
+          - nome: Grype
+            url: https://github.com/anchore/grype
+            licenca: Apache-2.0
+            nota: cruza o SBOM com vulnerabilidades conhecidas
+          - nome: Dependency-Track
+            url: https://dependencytrack.org/
+            licenca: Apache-2.0
+            nota: monitora continuamente os componentes de todo o portfólio
+          - nome: Sigstore Cosign
+            url: https://www.sigstore.dev/
+            licenca: Apache-2.0
+            nota: assina e verifica artefato, fechando a porta da adulteração
+      - id: A.5.22
+        titulo: Monitoramento, análise crítica e gestão de mudanças dos serviços de fornecedores
+        objetivo: Acompanhar a entrega do fornecedor e avaliar mudanças no serviço.
+        ferramentas:
+          - nome: Zabbix
+            url: https://www.zabbix.com/
+            licenca: AGPL-3.0
+            nota: mede disponibilidade real contra o acordo de nível de serviço
+          - nome: Uptime Kuma
+            url: https://github.com/louislam/uptime-kuma
+            licenca: MIT
+            nota: verificação simples de disponibilidade com histórico
+          - nome: Eramba Community
+            url: https://www.eramba.org/
+            licenca: AGPL-3.0
+            nota: agenda e registra a análise crítica periódica do fornecedor
+      - id: A.5.23
+        titulo: Segurança da informação para uso de serviços em nuvem
+        objetivo: Definir regras para aquisição, uso, gestão e saída de serviços em nuvem.
+        ferramentas:
+          - nome: Prowler
+            url: https://github.com/prowler-cloud/prowler
+            licenca: Apache-2.0
+            nota: avalia postura em AWS, Azure, GCP e Kubernetes contra referências conhecidas
+          - nome: ScoutSuite
+            url: https://github.com/nccgroup/ScoutSuite
+            licenca: GPL-2.0
+            nota: auditoria multinuvem com relatório navegável
+          - nome: CloudQuery
+            url: https://www.cloudquery.io/
+            licenca: MPL-2.0
+            nota: extrai o inventário da nuvem para SQL e permite consulta própria
+          - nome: Steampipe
+            url: https://steampipe.io/
+            licenca: AGPL-3.0
+            nota: consulta a nuvem como se fosse banco de dados
+      - id: A.5.24
+        titulo: Planejamento e preparação da gestão de incidentes
+        objetivo: Planejar o processo de resposta antes do incidente, com papéis e procedimentos.
+        ferramentas:
+          - nome: TheHive
+            url: https://strangebee.com/thehive/
+            licenca: AGPL-3.0
+            nota: modelos de caso que já trazem as tarefas e os responsáveis
+          - nome: IRIS
+            url: https://dfir-iris.org/
+            licenca: LGPL-3.0
+            nota: plataforma colaborativa de resposta com linha do tempo
+          - nome: Shuffle
+            url: https://shuffler.io/
+            licenca: AGPL-3.0
+            nota: automação (SOAR) para padronizar os primeiros passos
+      - id: A.5.25
+        titulo: Avaliação e decisão sobre eventos de segurança da informação
+        objetivo: Classificar o que é evento e o que vira incidente, com critério definido.
+        ferramentas:
+          - nome: Wazuh
+            url: https://wazuh.com/
+            licenca: GPL-2.0
+            nota: gera e pontua alertas a partir de logs e agentes
+          - nome: TheHive + Cortex
+            url: https://strangebee.com/
+            licenca: AGPL-3.0
+            nota: triagem com enriquecimento automático do indicador
+          - nome: Graylog
+            url: https://graylog.org/
+            licenca: SSPL/GPL-3.0
+            nota: centraliza e correlaciona para separar ruído de evento
+      - id: A.5.26
+        titulo: Resposta a incidentes de segurança da informação
+        objetivo: Responder ao incidente conforme o procedimento, registrando cada passo.
+        ferramentas:
+          - nome: TheHive
+            url: https://strangebee.com/thehive/
+            licenca: AGPL-3.0
+            nota: condução do caso com registro do que foi feito e por quem
+          - nome: Velociraptor
+            url: https://docs.velociraptor.app/
+            licenca: AGPL-3.0
+            nota: coleta e caça em endpoint durante a resposta
+          - nome: GRR Rapid Response
+            url: https://github.com/google/grr
+            licenca: Apache-2.0
+            nota: resposta remota em escala
+      - id: A.5.27
+        titulo: Aprendizado com incidentes de segurança da informação
+        objetivo: Usar o que foi aprendido para reduzir a probabilidade ou o impacto futuro.
+        ferramentas:
+          - nome: IRIS
+            url: https://dfir-iris.org/
+            licenca: LGPL-3.0
+            nota: guarda o caso completo e permite revisão posterior
+          - nome: Wiki.js
+            url: https://js.wiki/
+            licenca: AGPL-3.0
+            nota: base de lições aprendidas pesquisável
+          - nome: Eramba Community
+            url: https://www.eramba.org/
+            licenca: AGPL-3.0
+            nota: liga o incidente ao risco e ao controle que falhou
+      - id: A.5.28
+        titulo: Coleta de evidências
+        objetivo: Preservar evidências de forma que mantenham valor probatório.
+        ferramentas:
+          - nome: Velociraptor
+            url: https://docs.velociraptor.app/
+            licenca: AGPL-3.0
+            nota: coleta forense remota preservando metadados
+          - nome: Autopsy
+            url: https://www.autopsy.com/
+            licenca: Apache-2.0
+            nota: análise forense com cadeia de custódia
+          - nome: dcfldd
+            url: https://github.com/resurrecting-open-source-projects/dcfldd
+            licenca: GPL-2.0
+            nota: imagem bit a bit com soma de verificação durante a cópia
+          - nome: Plaso
+            url: https://plaso.readthedocs.io/
+            licenca: Apache-2.0
+            nota: linha do tempo forense a partir de múltiplas fontes
+      - id: A.5.29
+        titulo: Segurança da informação durante a disrupção
+        objetivo: Manter a segurança no nível adequado também durante a crise.
+        ferramentas:
+          - nome: Proxmox VE
+            url: https://www.proxmox.com/
+            licenca: AGPL-3.0
+            nota: alta disponibilidade e replicação de máquinas virtuais
+          - nome: Keepalived
+            url: https://www.keepalived.org/
+            licenca: GPL-2.0
+            nota: failover de serviço sem perder o controle de acesso
+          - nome: Restic
+            url: https://restic.net/
+            licenca: BSD-2-Clause
+            nota: backup cifrado que continua válido durante a contingência
+      - id: A.5.30
+        titulo: Prontidão de TIC para continuidade de negócios
+        objetivo: Planejar, implementar e testar a prontidão da TIC frente aos objetivos de continuidade.
+        ferramentas:
+          - nome: Velero
+            url: https://velero.io/
+            licenca: Apache-2.0
+            nota: backup e restauração de cluster Kubernetes, com teste de restauração
+          - nome: Bacula
+            url: https://www.bacula.org/
+            licenca: AGPL-3.0
+            nota: backup corporativo com agendamento e verificação
+          - nome: Proxmox Backup Server
+            url: https://www.proxmox.com/proxmox-backup-server
+            licenca: AGPL-3.0
+            nota: backup incremental com verificação de integridade
+          - nome: Ansible
+            url: https://www.ansible.com/
+            licenca: GPL-3.0
+            nota: reconstrução reproduzível do ambiente, que é o que faz o plano funcionar
+      - id: A.5.31
+        titulo: Requisitos legais, estatutários, regulamentares e contratuais
+        objetivo: Identificar e manter atualizados os requisitos aplicáveis e como atendê-los.
+        ferramentas:
+          - nome: Eramba Community
+            url: https://www.eramba.org/
+            licenca: AGPL-3.0
+            nota: registro de obrigações legais ligado a controles e evidências
+          - nome: SimpleRisk
+            url: https://www.simplerisk.com/
+            licenca: MPL-2.0
+            nota: mapeia requisito para controle
+          - nome: OpenRegulatory
+            url: https://openregulatory.com/
+            licenca: variável
+            nota: modelos abertos de documentação regulatória
+      - id: A.5.32
+        titulo: Direitos de propriedade intelectual
+        objetivo: Proteger a propriedade intelectual própria e de terceiros, inclusive licenças de software.
+        ferramentas:
+          - nome: FOSSology
+            url: https://www.fossology.org/
+            licenca: GPL-2.0
+            nota: varre o código e identifica licenças de terceiros
+          - nome: ScanCode Toolkit
+            url: https://github.com/aboutcode-org/scancode-toolkit
+            licenca: Apache-2.0
+            nota: detecção detalhada de licença e origem
+          - nome: Syft
+            url: https://github.com/anchore/syft
+            licenca: Apache-2.0
+            nota: SBOM que já traz a licença de cada componente
+          - nome: Snipe-IT
+            url: https://snipeitapp.com/
+            licenca: AGPL-3.0
+            nota: controle de licenças de software adquiridas
+      - id: A.5.33
+        titulo: Proteção de registros
+        objetivo: Proteger registros contra perda, destruição, falsificação e acesso indevido.
+        ferramentas:
+          - nome: Mayan EDMS
+            url: https://www.mayan-edms.com/
+            licenca: Apache-2.0
+            nota: gestão documental com retenção e permissão por documento
+          - nome: MinIO
+            url: https://min.io/
+            licenca: AGPL-3.0
+            nota: armazenamento de objetos com bloqueio de objeto (WORM)
+          - nome: Restic
+            url: https://restic.net/
+            licenca: BSD-2-Clause
+            nota: cópias cifradas e verificáveis
+          - nome: Chronicle / rsyslog com assinatura
+            url: https://www.rsyslog.com/
+            licenca: GPL-3.0
+            nota: registro de log com assinatura e selo de tempo
+      - id: A.5.34
+        titulo: Privacidade e proteção de dados pessoais
+        objetivo: Atender aos requisitos de privacidade aplicáveis, como a LGPD.
+        ferramentas:
+          - nome: Matomo
+            url: https://matomo.org/
+            licenca: GPL-3.0
+            nota: analítica web autogerida, sem enviar dado de visitante a terceiro
+          - nome: Microsoft Presidio
+            url: https://microsoft.github.io/presidio/
+            licenca: MIT
+            nota: identifica e anonimiza dados pessoais em texto e imagem
+          - nome: OpenMetadata
+            url: https://open-metadata.org/
+            licenca: Apache-2.0
+            nota: mapeia onde o dado pessoal está, que é o pré-requisito do resto
+          - nome: Consent Manager (Klaro)
+            url: https://klaro.org/
+            licenca: BSD-3-Clause
+            nota: gestão de consentimento de cookies no site
+      - id: A.5.35
+        titulo: Análise crítica independente da segurança da informação
+        objetivo: Submeter a segurança a análise independente em intervalos planejados.
+        ferramentas:
+          - nome: OpenSCAP
+            url: https://www.open-scap.org/
+            licenca: LGPL-2.1
+            nota: avaliação técnica automatizada e repetível contra referência
+          - nome: Lynis
+            url: https://cisofy.com/lynis/
+            licenca: GPL-3.0
+            nota: auditoria de hardening de sistema com relatório
+          - nome: Prowler
+            url: https://github.com/prowler-cloud/prowler
+            licenca: Apache-2.0
+            nota: avaliação independente da postura em nuvem
+      - id: A.5.36
+        titulo: Conformidade com políticas, regras e normas de segurança
+        objetivo: Verificar regularmente se o que está escrito é o que acontece.
+        ferramentas:
+          - nome: OpenSCAP
+            url: https://www.open-scap.org/
+            licenca: LGPL-2.1
+            nota: mede a aderência técnica à norma interna
+          - nome: osquery + Fleet
+            url: https://fleetdm.com/
+            licenca: MIT
+            nota: consulta a frota inteira e mostra o desvio por máquina
+          - nome: Wazuh
+            url: https://wazuh.com/
+            licenca: GPL-2.0
+            nota: monitora conformidade de configuração continuamente
+      - id: A.5.37
+        titulo: Procedimentos operacionais documentados
+        objetivo: Documentar os procedimentos e disponibilizá-los a quem precisa executá-los.
+        ferramentas:
+          - nome: BookStack
+            url: https://www.bookstackapp.com/
+            licenca: MIT
+            nota: procedimento organizado e pesquisável
+          - nome: Wiki.js
+            url: https://js.wiki/
+            licenca: AGPL-3.0
+            nota: com versionamento em Git, que dá rastreabilidade de alteração
+          - nome: Ansible
+            url: https://www.ansible.com/
+            licenca: GPL-3.0
+            nota: o procedimento vira código executável, eliminando a diferença entre o escrito e o feito
+  - id: A.6
+    nome: Controles de pessoas
+    controles:
+      - id: A.6.1
+        titulo: Seleção
+        objetivo: Verificar antecedentes dos candidatos de forma proporcional ao risco do cargo.
+        ferramentas:
+          - nome: OrangeHRM
+            url: https://www.orangehrm.com/
+            licenca: GPL-2.0
+            nota: registra a etapa de verificação dentro do processo seletivo
+          - nome: Odoo Recruitment
+            url: https://www.odoo.com/app/recruitment
+            licenca: LGPL-3.0
+            nota: fluxo de seleção com checklist por vaga
+      - id: A.6.2
+        titulo: Termos e condições de contratação
+        objetivo: Estabelecer em contrato as responsabilidades de segurança do empregado e do contratante.
+        ferramentas:
+          - nome: Documenso
+            url: https://documenso.com/
+            licenca: AGPL-3.0
+            nota: assinatura com trilha de auditoria e carimbo de tempo
+          - nome: Docuseal
+            url: https://www.docuseal.com/
+            licenca: AGPL-3.0
+            nota: modelos reutilizáveis de termo
+          - nome: OrangeHRM
+            url: https://www.orangehrm.com/
+            licenca: GPL-2.0
+            nota: guarda do contrato vinculado ao colaborador
+      - id: A.6.3
+        titulo: Conscientização, educação e treinamento
+        objetivo: Treinar o pessoal e medir se a mensagem chegou, de forma periódica.
+        ferramentas:
+          - nome: Moodle
+            url: https://github.com/moodle/moodle
+            licenca: GPL-3.0
+            nota: trilhas, avaliação e certificado, que é a evidência de eficácia
+          - nome: Open edX
+            url: https://openedx.org/
+            licenca: AGPL-3.0
+            nota: alternativa para programa grande
+          - nome: Gophish
+            url: https://getgophish.com/
+            licenca: MIT
+            nota: simulação de phishing que mede comportamento, não só presença
+          - nome: Mattermost
+            url: https://mattermost.com/
+            licenca: AGPL-3.0
+            nota: canal de campanhas e lembretes contínuos
+      - id: A.6.4
+        titulo: Processo disciplinar
+        objetivo: Ter processo formal e comunicado para tratar violações de segurança.
+        ferramentas:
+          - nome: OrangeHRM
+            url: https://www.orangehrm.com/
+            licenca: GPL-2.0
+            nota: registro de ocorrência disciplinar com histórico
+          - nome: Zammad
+            url: https://zammad.com/
+            licenca: AGPL-3.0
+            nota: fluxo com partes envolvidas e prazo, mantendo a confidencialidade
+      - id: A.6.5
+        titulo: Responsabilidades após encerramento ou mudança da contratação
+        objetivo: Definir e comunicar o que permanece válido depois da saída ou da mudança de função.
+        ferramentas:
+          - nome: Apache Syncope
+            url: https://syncope.apache.org/
+            licenca: Apache-2.0
+            nota: desprovisionamento automático em todos os sistemas no desligamento
+          - nome: midPoint
+            url: https://evolveum.com/midpoint/
+            licenca: Apache-2.0
+            nota: recalcula acessos quando a função muda, evitando acúmulo
+          - nome: Snipe-IT
+            url: https://snipeitapp.com/
+            licenca: AGPL-3.0
+            nota: pendências de ativo que bloqueiam o encerramento
+      - id: A.6.6
+        titulo: Acordos de confidencialidade ou não divulgação
+        objetivo: Manter acordos de confidencialidade identificados, assinados e revisados.
+        ferramentas:
+          - nome: Documenso
+            url: https://documenso.com/
+            licenca: AGPL-3.0
+            nota: assinatura e verificação posterior do documento
+          - nome: Mayan EDMS
+            url: https://www.mayan-edms.com/
+            licenca: Apache-2.0
+            nota: guarda com vencimento e alerta de renovação
+      - id: A.6.7
+        titulo: Trabalho remoto
+        objetivo: Proteger a informação acessada e processada fora das instalações.
+        ferramentas:
+          - nome: WireGuard
+            url: https://www.wireguard.com/
+            licenca: GPL-2.0
+            nota: túnel simples e auditável, com chave por dispositivo
+          - nome: OpenVPN
+            url: https://openvpn.net/community/
+            licenca: GPL-2.0
+            nota: alternativa consolidada com certificado por usuário
+          - nome: Teleport
+            url: https://goteleport.com/
+            licenca: AGPL-3.0
+            nota: acesso a servidor e banco sem expor a rede inteira
+          - nome: Headscale
+            url: https://headscale.net/
+            licenca: BSD-3-Clause
+            nota: painel de controle próprio para malha Tailscale
+      - id: A.6.8
+        titulo: Relato de eventos de segurança da informação
+        objetivo: Dar a todos um canal simples e conhecido para relatar evento ou suspeita.
+        ferramentas:
+          - nome: Zammad
+            url: https://zammad.com/
+            licenca: AGPL-3.0
+            nota: canal de relato com acompanhamento e prazo
+          - nome: GLPI
+            url: https://glpi-project.org/
+            licenca: GPL-3.0
+            nota: service desk que já existe na maioria das empresas
+          - nome: TheHive
+            url: https://strangebee.com/thehive/
+            licenca: AGPL-3.0
+            nota: recebe o relato e o transforma em caso quando procede
+  - id: A.7
+    nome: Controles físicos
+    controles:
+      - id: A.7.1
+        titulo: Perímetros de segurança física
+        objetivo: Definir perímetros que protejam as áreas com informação e ativos críticos.
+        ferramentas:
+          - nome: NetBox
+            url: https://netboxlabs.com/oss/netbox/
+            licenca: Apache-2.0
+            nota: documenta sítios, salas e racks, que é a planta do perímetro
+          - nome: Home Assistant
+            url: https://www.home-assistant.io/
+            licenca: Apache-2.0
+            nota: integra sensores de abertura e alarme ao monitoramento
+      - id: A.7.2
+        titulo: Entrada física
+        objetivo: Controlar e registrar quem entra em cada área segura.
+        ferramentas:
+          - nome: Access Control OS (OSDP/Wiegand)
+            url: https://github.com/goToMain/libosdp
+            licenca: Apache-2.0
+            nota: biblioteca aberta para controladoras de acesso OSDP
+          - nome: Home Assistant
+            url: https://www.home-assistant.io/
+            licenca: Apache-2.0
+            nota: registra eventos de porta e integra com fechadura eletrônica
+          - nome: GLPI
+            url: https://glpi-project.org/
+            licenca: GPL-3.0
+            nota: registro de visitantes como chamado, quando não há catraca
+      - id: A.7.3
+        titulo: Segurança de escritórios, salas e instalações
+        objetivo: Projetar e aplicar segurança física para escritórios e salas.
+        ferramentas:
+          - nome: NetBox
+            url: https://netboxlabs.com/oss/netbox/
+            licenca: Apache-2.0
+            nota: mantém a documentação do que existe em cada sala
+          - nome: Home Assistant
+            url: https://www.home-assistant.io/
+            licenca: Apache-2.0
+            nota: automação de alarme por horário e presença
+      - id: A.7.4
+        titulo: Monitoramento de segurança física
+        objetivo: Monitorar continuamente as instalações contra acesso não autorizado.
+        ferramentas:
+          - nome: Frigate
+            url: https://frigate.video/
+            licenca: MIT
+            nota: CFTV com detecção de objeto local, sem enviar imagem para nuvem
+          - nome: ZoneMinder
+            url: https://github.com/ZoneMinder/zoneminder
+            licenca: GPL-2.0
+            nota: sistema de CFTV consolidado com retenção configurável
+          - nome: Shinobi
+            url: https://shinobi.video/
+            licenca: AGPL-3.0
+            nota: alternativa leve com API
+          - nome: Viseron
+            url: https://viseron.netlify.app/
+            licenca: MIT
+            nota: NVR com detecção e retenção por evento
+      - id: A.7.5
+        titulo: Proteção contra ameaças físicas e ambientais
+        objetivo: Proteger contra incêndio, alagamento, falha de energia e eventos naturais.
+        ferramentas:
+          - nome: Zabbix
+            url: https://www.zabbix.com/
+            licenca: AGPL-3.0
+            nota: monitora sensores ambientais e dispara alerta
+          - nome: Home Assistant
+            url: https://www.home-assistant.io/
+            licenca: Apache-2.0
+            nota: integra sensor de fumaça, água e temperatura
+          - nome: NUT (Network UPS Tools)
+            url: https://networkupstools.org/
+            licenca: GPL-2.0
+            nota: monitora nobreak e desliga o ambiente com segurança
+      - id: A.7.6
+        titulo: Trabalho em áreas seguras
+        objetivo: Definir e aplicar regras para o trabalho dentro de áreas seguras.
+        ferramentas:
+          - nome: Wiki.js
+            url: https://js.wiki/
+            licenca: AGPL-3.0
+            nota: publica a regra da área e registra a ciência
+          - nome: Frigate
+            url: https://frigate.video/
+            licenca: MIT
+            nota: verificação por vídeo do cumprimento da regra
+      - id: A.7.7
+        titulo: Mesa limpa e tela limpa
+        objetivo: Adotar e fazer cumprir a regra de mesa e tela limpas.
+        ferramentas:
+          - nome: Ansible
+            url: https://www.ansible.com/
+            licenca: GPL-3.0
+            nota: aplica bloqueio automático de tela em toda a frota
+          - nome: osquery + Fleet
+            url: https://fleetdm.com/
+            licenca: MIT
+            nota: verifica se o bloqueio de tela está mesmo ativo em cada máquina
+          - nome: Wazuh
+            url: https://wazuh.com/
+            licenca: GPL-2.0
+            nota: monitora a política de tela como item de conformidade
+      - id: A.7.8
+        titulo: Localização e proteção de equipamentos
+        objetivo: Posicionar e proteger equipamentos conforme o risco do ambiente.
+        ferramentas:
+          - nome: NetBox
+            url: https://netboxlabs.com/oss/netbox/
+            licenca: Apache-2.0
+            nota: posição exata em rack e unidade, com energia e cabeamento
+          - nome: Snipe-IT
+            url: https://snipeitapp.com/
+            licenca: AGPL-3.0
+            nota: localização do ativo e responsável
+      - id: A.7.9
+        titulo: Segurança de ativos fora das instalações
+        objetivo: Proteger ativos que saem das instalações, como notebooks e celulares.
+        ferramentas:
+          - nome: LUKS / cryptsetup
+            url: https://gitlab.com/cryptsetup/cryptsetup
+            licenca: GPL-2.0
+            nota: cifra o disco inteiro, que é a única proteção real contra furto
+          - nome: VeraCrypt
+            url: https://www.veracrypt.fr/
+            licenca: Apache-2.0/TrueCrypt
+            nota: alternativa multiplataforma
+          - nome: Prey
+            url: https://github.com/prey/prey-node-client
+            licenca: GPL-3.0
+            nota: rastreio e apagamento remoto de dispositivo
+          - nome: Snipe-IT
+            url: https://snipeitapp.com/
+            licenca: AGPL-3.0
+            nota: controle de quem está com o quê, fora do escritório
+      - id: A.7.10
+        titulo: Mídia de armazenamento
+        objetivo: Gerenciar mídias ao longo do ciclo de vida, da aquisição ao descarte.
+        ferramentas:
+          - nome: Snipe-IT
+            url: https://snipeitapp.com/
+            licenca: AGPL-3.0
+            nota: inventário de mídia com histórico de custódia
+          - nome: Cryptomator
+            url: https://cryptomator.org/
+            licenca: GPL-3.0
+            nota: cifra o conteúdo antes de gravar em mídia removível
+          - nome: USBGuard
+            url: https://usbguard.github.io/
+            licenca: GPL-2.0
+            nota: autoriza por regra quais dispositivos USB podem ser usados
+      - id: A.7.11
+        titulo: Serviços de infraestrutura
+        objetivo: Proteger as instalações contra falhas de energia e outros serviços de apoio.
+        ferramentas:
+          - nome: NUT (Network UPS Tools)
+            url: https://networkupstools.org/
+            licenca: GPL-2.0
+            nota: gestão de nobreak com desligamento ordenado
+          - nome: Zabbix
+            url: https://www.zabbix.com/
+            licenca: AGPL-3.0
+            nota: alerta de falha de energia, clima e rede
+          - nome: Prometheus + Grafana
+            url: https://prometheus.io/
+            licenca: Apache-2.0
+            nota: séries históricas de consumo e temperatura
+      - id: A.7.12
+        titulo: Segurança do cabeamento
+        objetivo: Proteger cabos de energia e telecomunicações contra interceptação e dano.
+        ferramentas:
+          - nome: NetBox
+            url: https://netboxlabs.com/oss/netbox/
+            licenca: Apache-2.0
+            nota: documenta cada cabo, porta e trajeto, inclusive o patch panel
+          - nome: LibreNMS
+            url: https://www.librenms.org/
+            licenca: GPL-3.0
+            nota: detecta mudança de porta e queda de enlace
+      - id: A.7.13
+        titulo: Manutenção de equipamentos
+        objetivo: Manter os equipamentos corretamente para preservar disponibilidade e integridade.
+        ferramentas:
+          - nome: GLPI
+            url: https://glpi-project.org/
+            licenca: GPL-3.0
+            nota: plano de manutenção preventiva com histórico por ativo
+          - nome: Snipe-IT
+            url: https://snipeitapp.com/
+            licenca: AGPL-3.0
+            nota: registro de manutenção e garantia
+          - nome: smartmontools
+            url: https://www.smartmontools.org/
+            licenca: GPL-2.0
+            nota: antecipa falha de disco antes da perda
+      - id: A.7.14
+        titulo: Descarte ou reutilização segura de equipamentos
+        objetivo: Verificar que dados sensíveis foram removidos antes do descarte ou reuso.
+        ferramentas:
+          - nome: nwipe
+            url: https://github.com/martijnvanbrummelen/nwipe
+            licenca: GPL-2.0
+            nota: apagamento seguro com relatório, que serve de evidência
+          - nome: ShredOS
+            url: https://github.com/PartialVolume/shredos.x86_64
+            licenca: GPL-2.0
+            nota: sistema inicializável dedicado ao apagamento em lote
+          - nome: nvme-cli
+            url: https://github.com/linux-nvme/nvme-cli
+            licenca: GPL-2.0
+            nota: apagamento pelo comando do próprio disco (format/sanitize), indicado para SSD NVMe
+          - nome: Snipe-IT
+            url: https://snipeitapp.com/
+            licenca: AGPL-3.0
+            nota: fecha o ciclo de vida do ativo com o registro do descarte
+  - id: A.8
+    nome: Controles tecnológicos
+    controles:
+      - id: A.8.1
+        titulo: Dispositivos endpoint do usuário
+        objetivo: Proteger a informação armazenada ou acessada pelos dispositivos dos usuários.
+        ferramentas:
+          - nome: Wazuh
+            url: https://wazuh.com/
+            licenca: GPL-2.0
+            nota: agente em cada estação com detecção, inventário e conformidade
+          - nome: osquery + Fleet
+            url: https://fleetdm.com/
+            licenca: MIT
+            nota: visibilidade da frota por consulta SQL
+          - nome: LUKS / cryptsetup
+            url: https://gitlab.com/cryptsetup/cryptsetup
+            licenca: GPL-2.0
+            nota: cifra de disco
+          - nome: USBGuard
+            url: https://usbguard.github.io/
+            licenca: GPL-2.0
+            nota: controle de dispositivos removíveis
+      - id: A.8.2
+        titulo: Direitos de acesso privilegiado
+        objetivo: Restringir e controlar de perto a atribuição e o uso de privilégios.
+        ferramentas:
+          - nome: Teleport
+            url: https://goteleport.com/
+            licenca: AGPL-3.0
+            nota: acesso privilegiado com gravação de sessão e aprovação prévia
+          - nome: sudo com registro em I/O
+            url: https://www.sudo.ws/
+            licenca: ISC
+            nota: registra o que foi executado como root
+          - nome: FreeIPA
+            url: https://www.freeipa.org/
+            licenca: GPL-3.0
+            nota: política de sudo centralizada por host e grupo
+      - id: A.8.3
+        titulo: Restrição de acesso à informação
+        objetivo: Restringir acesso conforme a política de controle de acesso definida.
+        ferramentas:
+          - nome: Open Policy Agent
+            url: https://www.openpolicyagent.org/
+            licenca: Apache-2.0
+            nota: autorização fina como código, auditável
+          - nome: Cerbos
+            url: https://www.cerbos.dev/
+            licenca: Apache-2.0
+            nota: autorização desacoplada da aplicação
+          - nome: Keycloak
+            url: https://www.keycloak.org/
+            licenca: Apache-2.0
+            nota: escopos e papéis aplicados na borda
+      - id: A.8.4
+        titulo: Acesso ao código-fonte
+        objetivo: Controlar leitura e escrita do código-fonte e das ferramentas de desenvolvimento.
+        ferramentas:
+          - nome: Gitea
+            url: https://about.gitea.com/
+            licenca: MIT
+            nota: hospedagem própria com permissão por repositório e branch
+          - nome: Forgejo
+            url: https://forgejo.org/
+            licenca: MIT/GPL-3.0
+            nota: derivação comunitária do Gitea
+          - nome: GitLab CE
+            url: https://gitlab.com/gitlab-org/gitlab-foss
+            licenca: MIT
+            nota: regras de proteção de branch e aprovação obrigatória
+          - nome: Gitleaks
+            url: https://github.com/gitleaks/gitleaks
+            licenca: MIT
+            nota: impede que segredo entre no repositório
+      - id: A.8.5
+        titulo: Autenticação segura
+        objetivo: Implementar autenticação conforme a restrição e a política de acesso.
+        ferramentas:
+          - nome: Keycloak
+            url: https://www.keycloak.org/
+            licenca: Apache-2.0
+            nota: MFA, políticas de senha e federação
+          - nome: Authentik
+            url: https://goauthentik.io/
+            licenca: MIT
+            nota: fluxos de autenticação configuráveis, incluindo WebAuthn
+          - nome: privacyIDEA
+            url: https://privacyidea.org/
+            licenca: AGPL-3.0
+            nota: segundo fator com diversos tipos de token
+          - nome: SSSD
+            url: https://sssd.io/
+            licenca: GPL-3.0
+            nota: autenticação integrada em frota Linux
+      - id: A.8.6
+        titulo: Gestão de capacidade
+        objetivo: Monitorar e ajustar o uso de recursos conforme a necessidade futura.
+        ferramentas:
+          - nome: Prometheus + Grafana
+            url: https://prometheus.io/
+            licenca: Apache-2.0
+            nota: métricas com histórico e previsão de saturação
+          - nome: Zabbix
+            url: https://www.zabbix.com/
+            licenca: AGPL-3.0
+            nota: monitoramento com limiar e tendência
+          - nome: Netdata
+            url: https://www.netdata.cloud/
+            licenca: GPL-3.0
+            nota: alta resolução por segundo, útil para diagnóstico
+      - id: A.8.7
+        titulo: Proteção contra malware
+        objetivo: Implementar proteção contra malware apoiada em conscientização do usuário.
+        ferramentas:
+          - nome: ClamAV
+            url: https://www.clamav.net/
+            licenca: GPL-2.0
+            nota: antivírus de arquivo e gateway de e-mail
+          - nome: Wazuh
+            url: https://wazuh.com/
+            licenca: GPL-2.0
+            nota: detecção por comportamento e integridade de arquivo
+          - nome: YARA
+            url: https://virustotal.github.io/yara/
+            licenca: BSD-3-Clause
+            nota: regras de identificação de família de malware
+          - nome: Falco
+            url: https://falco.org/
+            licenca: Apache-2.0
+            nota: detecta comportamento anômalo em contêiner em tempo de execução
+      - id: A.8.8
+        titulo: Gestão de vulnerabilidades técnicas
+        objetivo: Obter informação sobre vulnerabilidades, avaliar a exposição e tratar.
+        ferramentas:
+          - nome: OpenVAS / Greenbone
+            url: https://www.greenbone.net/
+            licenca: GPL-2.0
+            nota: varredura de rede com base de testes mantida
+          - nome: Trivy
+            url: https://trivy.dev/
+            licenca: Apache-2.0
+            nota: imagem, sistema de arquivos, repositório e infraestrutura como código
+          - nome: Grype
+            url: https://github.com/anchore/grype
+            licenca: Apache-2.0
+            nota: vulnerabilidade a partir do SBOM
+          - nome: DefectDojo
+            url: https://www.defectdojo.org/
+            licenca: BSD-3-Clause
+            nota: consolida o achado de várias ferramentas e controla o tratamento
+          - nome: Nuclei
+            url: https://github.com/projectdiscovery/nuclei
+            licenca: MIT
+            nota: verificação por modelo, boa para confirmar exposição
+      - id: A.8.9
+        titulo: Gestão de configuração
+        objetivo: Estabelecer, documentar, aplicar e monitorar configurações seguras.
+        ferramentas:
+          - nome: Ansible
+            url: https://www.ansible.com/
+            licenca: GPL-3.0
+            nota: configuração declarada em código e reaplicável
+          - nome: OpenSCAP
+            url: https://www.open-scap.org/
+            licenca: LGPL-2.1
+            nota: verifica e corrige desvio contra referência de hardening
+          - nome: OpenTofu
+            url: https://opentofu.org/
+            licenca: MPL-2.0
+            nota: infraestrutura como código, derivação aberta do Terraform
+          - nome: Rudder
+            url: https://www.rudder.io/
+            licenca: GPL-3.0
+            nota: conformidade contínua de configuração com painel
+      - id: A.8.10
+        titulo: Exclusão de informações
+        objetivo: Excluir informação quando não for mais necessária.
+        ferramentas:
+          - nome: nwipe
+            url: https://github.com/martijnvanbrummelen/nwipe
+            licenca: GPL-2.0
+            nota: apagamento com relatório
+          - nome: Mayan EDMS
+            url: https://www.mayan-edms.com/
+            licenca: Apache-2.0
+            nota: política de retenção que dispara o descarte
+          - nome: GNU coreutils (shred)
+            url: https://www.gnu.org/software/coreutils/
+            licenca: GPL-3.0
+            nota: sobrescrita de arquivo; em sistema com journaling, prefira apagar a chave de cifra
+      - id: A.8.11
+        titulo: Mascaramento de dados
+        objetivo: Mascarar dados conforme a política de controle de acesso e os requisitos aplicáveis.
+        ferramentas:
+          - nome: Microsoft Presidio
+            url: https://microsoft.github.io/presidio/
+            licenca: MIT
+            nota: identifica e anonimiza dado pessoal em texto, imagem e estrutura
+          - nome: PostgreSQL Anonymizer
+            url: https://postgresql-anonymizer.readthedocs.io/
+            licenca: PostgreSQL
+            nota: mascaramento dentro do próprio banco
+          - nome: ARX
+            url: https://arx.deidentifier.org/
+            licenca: Apache-2.0
+            nota: anonimização com medição de risco de reidentificação
+      - id: A.8.12
+        titulo: Prevenção de vazamento de dados
+        objetivo: Aplicar medidas para prevenir a extração indevida de informação.
+        ferramentas:
+          - nome: OpenDLP
+            url: https://github.com/ezarko/opendlp
+            licenca: GPL-3.0
+            nota: varredura de dado sensível em repouso
+          - nome: Wazuh
+            url: https://wazuh.com/
+            licenca: GPL-2.0
+            nota: detecta exfiltração por regra e integridade de arquivo
+          - nome: Zeek
+            url: https://zeek.org/
+            licenca: BSD-3-Clause
+            nota: análise de tráfego que revela transferência anômala
+          - nome: Gitleaks / TruffleHog
+            url: https://github.com/trufflesecurity/trufflehog
+            licenca: AGPL-3.0
+            nota: impede vazamento de segredo por repositório
+      - id: A.8.13
+        titulo: Backup das informações
+        objetivo: Manter e testar cópias de segurança conforme a política acordada.
+        ferramentas:
+          - nome: Restic
+            url: https://restic.net/
+            licenca: BSD-2-Clause
+            nota: cópia cifrada, deduplicada e verificável
+          - nome: BorgBackup
+            url: https://www.borgbackup.org/
+            licenca: BSD-3-Clause
+            nota: alternativa consolidada com deduplicação
+          - nome: Bacula
+            url: https://www.bacula.org/
+            licenca: AGPL-3.0
+            nota: backup corporativo com catálogo e fitoteca
+          - nome: UrBackup
+            url: https://www.urbackup.org/
+            licenca: AGPL-3.0
+            nota: backup de estação com imagem e arquivo
+          - nome: Velero
+            url: https://velero.io/
+            licenca: Apache-2.0
+            nota: backup de Kubernetes, inclusive volumes
+      - id: A.8.14
+        titulo: Redundância dos recursos de tratamento de informações
+        objetivo: Implementar redundância suficiente para os requisitos de disponibilidade.
+        ferramentas:
+          - nome: Keepalived
+            url: https://www.keepalived.org/
+            licenca: GPL-2.0
+            nota: IP virtual com failover
+          - nome: HAProxy
+            url: https://www.haproxy.org/
+            licenca: GPL-2.0
+            nota: balanceamento com verificação de saúde
+          - nome: Patroni
+            url: https://patroni.readthedocs.io/
+            licenca: MIT
+            nota: alta disponibilidade para PostgreSQL
+          - nome: Proxmox VE
+            url: https://www.proxmox.com/
+            licenca: AGPL-3.0
+            nota: cluster com migração e replicação
+      - id: A.8.15
+        titulo: Registro
+        objetivo: Produzir, armazenar, proteger e analisar registros de eventos.
+        ferramentas:
+          - nome: Graylog
+            url: https://graylog.org/
+            licenca: SSPL/GPL-3.0
+            nota: coleta, retenção e busca com controle de acesso
+          - nome: OpenSearch
+            url: https://opensearch.org/
+            licenca: Apache-2.0
+            nota: armazenamento e busca em escala
+          - nome: Grafana Loki
+            url: https://grafana.com/oss/loki/
+            licenca: AGPL-3.0
+            nota: log indexado por rótulo, barato de manter
+          - nome: rsyslog
+            url: https://www.rsyslog.com/
+            licenca: GPL-3.0
+            nota: coleta confiável com encaminhamento cifrado
+      - id: A.8.16
+        titulo: Atividades de monitoramento
+        objetivo: Monitorar redes, sistemas e aplicações para detectar comportamento anômalo.
+        ferramentas:
+          - nome: Wazuh
+            url: https://wazuh.com/
+            licenca: GPL-2.0
+            nota: SIEM e detecção em endpoint na mesma plataforma
+          - nome: Security Onion
+            url: https://securityonionsolutions.com/
+            licenca: GPL-2.0
+            nota: distribuição completa de monitoramento e caça
+          - nome: Suricata
+            url: https://suricata.io/
+            licenca: GPL-2.0
+            nota: detecção e prevenção de intrusão em rede
+          - nome: Zeek
+            url: https://zeek.org/
+            licenca: BSD-3-Clause
+            nota: registro rico de rede para análise posterior
+      - id: A.8.17
+        titulo: Sincronização do relógio
+        objetivo: Sincronizar os relógios com fontes de tempo aprovadas.
+        ferramentas:
+          - nome: chrony
+            url: https://chrony-project.org/
+            licenca: GPL-2.0
+            nota: cliente e servidor NTP preciso, o padrão atual em Linux
+          - nome: NTPsec
+            url: https://www.ntpsec.org/
+            licenca: BSD-2-Clause
+            nota: implementação revisada com foco em segurança
+          - nome: Zabbix
+            url: https://www.zabbix.com/
+            licenca: AGPL-3.0
+            nota: alerta quando algum host sai de sincronia
+      - id: A.8.18
+        titulo: Uso de programas utilitários privilegiados
+        objetivo: Restringir e controlar rigidamente o uso de utilitários que burlam controles.
+        ferramentas:
+          - nome: SELinux
+            url: https://github.com/SELinuxProject
+            licenca: GPL-2.0
+            nota: confina o que cada processo pode fazer, mesmo como root
+          - nome: AppArmor
+            url: https://apparmor.net/
+            licenca: GPL-2.0
+            nota: perfis por aplicação, mais simples de operar
+          - nome: sudo
+            url: https://www.sudo.ws/
+            licenca: ISC
+            nota: lista explícita de comandos permitidos por usuário
+          - nome: Teleport
+            url: https://goteleport.com/
+            licenca: AGPL-3.0
+            nota: gravação da sessão em que o utilitário foi usado
+      - id: A.8.19
+        titulo: Instalação de software em sistemas operacionais
+        objetivo: Controlar a instalação de software nos sistemas em produção.
+        ferramentas:
+          - nome: Ansible
+            url: https://www.ansible.com/
+            licenca: GPL-3.0
+            nota: só entra o que está no código de configuração
+          - nome: fapolicyd
+            url: https://github.com/linux-application-whitelisting/fapolicyd
+            licenca: GPL-3.0
+            nota: lista de permissão de execução por política
+          - nome: Pulp
+            url: https://pulpproject.org/
+            licenca: GPL-2.0
+            nota: repositório interno que define o que pode ser instalado
+          - nome: osquery + Fleet
+            url: https://fleetdm.com/
+            licenca: MIT
+            nota: detecta software não autorizado já instalado
+      - id: A.8.20
+        titulo: Segurança de redes
+        objetivo: Gerenciar e controlar redes para proteger a informação que trafega.
+        ferramentas:
+          - nome: OPNsense
+            url: https://opnsense.org/
+            licenca: BSD-2-Clause
+            nota: firewall com IDS, VPN e relatório
+          - nome: pfSense CE
+            url: https://www.pfsense.org/
+            licenca: Apache-2.0
+            nota: alternativa consolidada
+          - nome: nftables
+            url: https://netfilter.org/projects/nftables/
+            licenca: GPL-2.0
+            nota: filtragem no próprio host
+          - nome: CrowdSec
+            url: https://www.crowdsec.net/
+            licenca: MIT
+            nota: bloqueio colaborativo de endereços hostis
+      - id: A.8.21
+        titulo: Segurança dos serviços de rede
+        objetivo: Identificar e aplicar os mecanismos de segurança de cada serviço de rede.
+        ferramentas:
+          - nome: Let's Encrypt + Certbot
+            url: https://certbot.eff.org/
+            licenca: Apache-2.0
+            nota: TLS gratuito e renovado automaticamente
+          - nome: step-ca
+            url: https://smallstep.com/docs/step-ca/
+            licenca: Apache-2.0
+            nota: autoridade certificadora interna para serviços e mTLS
+          - nome: testssl.sh
+            url: https://testssl.sh/
+            licenca: GPL-2.0
+            nota: verifica a qualidade real da configuração TLS
+          - nome: Unbound
+            url: https://nlnetlabs.nl/projects/unbound/
+            licenca: BSD-3-Clause
+            nota: DNS recursivo com validação DNSSEC
+      - id: A.8.22
+        titulo: Segregação de redes
+        objetivo: Segregar grupos de serviços, usuários e sistemas na rede.
+        ferramentas:
+          - nome: OPNsense
+            url: https://opnsense.org/
+            licenca: BSD-2-Clause
+            nota: VLAN e regras entre segmentos
+          - nome: Cilium
+            url: https://cilium.io/
+            licenca: Apache-2.0
+            nota: política de rede entre cargas de trabalho em Kubernetes
+          - nome: Calico
+            url: https://www.tigera.io/project-calico/
+            licenca: Apache-2.0
+            nota: alternativa com política de rede declarativa
+          - nome: Open vSwitch
+            url: https://www.openvswitch.org/
+            licenca: Apache-2.0
+            nota: segmentação em ambiente virtualizado
+      - id: A.8.23
+        titulo: Filtragem da web
+        objetivo: Gerenciar o acesso a sites externos para reduzir exposição a conteúdo malicioso.
+        ferramentas:
+          - nome: Pi-hole
+            url: https://pi-hole.net/
+            licenca: EUPL-1.2
+            nota: bloqueio por DNS, simples de implantar
+          - nome: Squid
+            url: https://www.squid-cache.org/
+            licenca: GPL-2.0
+            nota: proxy com política por grupo e registro de acesso
+          - nome: AdGuard Home
+            url: https://github.com/AdguardTeam/AdGuardHome
+            licenca: GPL-3.0
+            nota: filtragem DNS com painel e listas
+          - nome: Blocky
+            url: https://0xerr0r.github.io/blocky/
+            licenca: Apache-2.0
+            nota: resolvedor DNS com listas e métricas
+      - id: A.8.24
+        titulo: Uso de criptografia
+        objetivo: Definir e aplicar regras para uso da criptografia, incluindo gestão de chaves.
+        ferramentas:
+          - nome: OpenBao
+            url: https://openbao.org/
+            licenca: MPL-2.0
+            nota: gestão de chaves e segredos com rotação e trilha
+          - nome: step-ca
+            url: https://smallstep.com/docs/step-ca/
+            licenca: Apache-2.0
+            nota: PKI interna com ciclo de vida curto
+          - nome: age
+            url: https://github.com/FiloSottile/age
+            licenca: BSD-3-Clause
+            nota: cifra de arquivo moderna e simples
+          - nome: GnuPG
+            url: https://gnupg.org/
+            licenca: GPL-3.0
+            nota: assinatura e cifra com padrão OpenPGP
+          - nome: SOPS
+            url: https://github.com/getsops/sops
+            licenca: MPL-2.0
+            nota: cifra de segredo dentro do repositório
+      - id: A.8.25
+        titulo: Ciclo de vida de desenvolvimento seguro
+        objetivo: Estabelecer e aplicar regras de desenvolvimento seguro ao longo do ciclo.
+        ferramentas:
+          - nome: OWASP SAMM
+            url: https://owaspsamm.org/
+            licenca: CC BY-SA 4.0
+            nota: modelo de maturidade que estrutura o próprio ciclo
+          - nome: GitLab CE
+            url: https://gitlab.com/gitlab-org/gitlab-foss
+            licenca: MIT
+            nota: pipeline com etapas obrigatórias de segurança
+          - nome: Gitea Actions
+            url: https://about.gitea.com/
+            licenca: MIT
+            nota: mesma ideia em infraestrutura própria
+      - id: A.8.26
+        titulo: Requisitos de segurança da aplicação
+        objetivo: Especificar os requisitos de segurança ao desenvolver ou adquirir aplicação.
+        ferramentas:
+          - nome: OWASP ASVS
+            url: https://owasp.org/www-project-application-security-verification-standard/
+            licenca: CC BY-SA 4.0
+            nota: catálogo de requisitos verificáveis por nível
+          - nome: OWASP MASVS
+            url: https://mas.owasp.org/MASVS/
+            licenca: CC BY-SA 4.0
+            nota: equivalente para aplicação móvel
+          - nome: DefectDojo
+            url: https://www.defectdojo.org/
+            licenca: BSD-3-Clause
+            nota: rastreia o requisito até o teste que o comprova
+      - id: A.8.27
+        titulo: Princípios de arquitetura e engenharia de sistemas seguros
+        objetivo: Estabelecer e aplicar princípios de engenharia segura em todo sistema.
+        ferramentas:
+          - nome: OWASP Threat Dragon
+            url: https://owasp.org/www-project-threat-dragon/
+            licenca: Apache-2.0
+            nota: modelagem de ameaças com diagrama e mitigação
+          - nome: pytm
+            url: https://github.com/OWASP/pytm
+            licenca: MIT
+            nota: modelagem de ameaças como código
+          - nome: Threagile
+            url: https://threagile.io/
+            licenca: MIT
+            nota: modelagem de ameaças a partir de um arquivo YAML, boa para automatizar
+      - id: A.8.28
+        titulo: Codificação segura
+        objetivo: Aplicar princípios de codificação segura no desenvolvimento.
+        ferramentas:
+          - nome: Semgrep
+            url: https://semgrep.dev/
+            licenca: LGPL-2.1
+            nota: análise estática com regras legíveis e próprias
+          - nome: SonarQube Community
+            url: https://www.sonarsource.com/products/sonarqube/
+            licenca: LGPL-3.0
+            nota: qualidade e segurança com portão de qualidade
+          - nome: Bandit
+            url: https://bandit.readthedocs.io/
+            licenca: Apache-2.0
+            nota: análise estática para Python
+          - nome: pre-commit
+            url: https://pre-commit.com/
+            licenca: MIT
+            nota: roda a verificação antes de o código entrar
+      - id: A.8.29
+        titulo: Testes de segurança em desenvolvimento e aceitação
+        objetivo: Definir e executar processos de teste de segurança durante o ciclo.
+        ferramentas:
+          - nome: OWASP ZAP
+            url: https://www.zaproxy.org/
+            licenca: Apache-2.0
+            nota: teste dinâmico automatizável em pipeline
+          - nome: Nuclei
+            url: https://github.com/projectdiscovery/nuclei
+            licenca: MIT
+            nota: verificação por modelo em ambiente de homologação
+          - nome: Trivy
+            url: https://trivy.dev/
+            licenca: Apache-2.0
+            nota: varredura de imagem antes da promoção
+          - nome: DefectDojo
+            url: https://www.defectdojo.org/
+            licenca: BSD-3-Clause
+            nota: consolida o resultado e bloqueia a entrega quando necessário
+      - id: A.8.30
+        titulo: Desenvolvimento terceirizado
+        objetivo: Dirigir, monitorar e revisar a atividade de desenvolvimento terceirizado.
+        ferramentas:
+          - nome: Gitea
+            url: https://about.gitea.com/
+            licenca: MIT
+            nota: o código do terceiro fica na sua infraestrutura, com revisão obrigatória
+          - nome: Semgrep
+            url: https://semgrep.dev/
+            licenca: LGPL-2.1
+            nota: aplica a sua regra ao código que vem de fora
+          - nome: Syft + Grype
+            url: https://github.com/anchore/syft
+            licenca: Apache-2.0
+            nota: SBOM do que o terceiro entregou
+      - id: A.8.31
+        titulo: Separação dos ambientes de desenvolvimento, teste e produção
+        objetivo: Separar e proteger os ambientes ao longo do ciclo.
+        ferramentas:
+          - nome: Proxmox VE
+            url: https://www.proxmox.com/
+            licenca: AGPL-3.0
+            nota: isolamento por cluster, VLAN e permissão
+          - nome: Kubernetes + namespaces
+            url: https://kubernetes.io/
+            licenca: Apache-2.0
+            nota: separação lógica com política de rede e cota
+          - nome: OpenTofu
+            url: https://opentofu.org/
+            licenca: MPL-2.0
+            nota: ambientes definidos em código, sem desvio manual
+          - nome: Keycloak
+            url: https://www.keycloak.org/
+            licenca: Apache-2.0
+            nota: realms distintos por ambiente
+      - id: A.8.32
+        titulo: Gestão de mudanças
+        objetivo: Submeter mudanças a procedimento formal de gestão de mudanças.
+        ferramentas:
+          - nome: GLPI
+            url: https://glpi-project.org/
+            licenca: GPL-3.0
+            nota: fluxo de mudança com aprovação e janela
+          - nome: Gitea / GitLab CE
+            url: https://about.gitea.com/
+            licenca: MIT
+            nota: toda mudança passa por revisão e fica no histórico
+          - nome: Atlantis
+            url: https://www.runatlantis.io/
+            licenca: Apache-2.0
+            nota: aplica mudança de infraestrutura só após aprovação no pedido
+          - nome: Zammad
+            url: https://zammad.com/
+            licenca: AGPL-3.0
+            nota: registro e comunicação da mudança
+      - id: A.8.33
+        titulo: Informações de teste
+        objetivo: Selecionar, proteger e gerenciar a informação usada em teste.
+        ferramentas:
+          - nome: PostgreSQL Anonymizer
+            url: https://postgresql-anonymizer.readthedocs.io/
+            licenca: PostgreSQL
+            nota: gera massa de teste a partir da produção, sem dado real
+          - nome: Microsoft Presidio
+            url: https://microsoft.github.io/presidio/
+            licenca: MIT
+            nota: anonimiza antes de copiar para homologação
+          - nome: Faker
+            url: https://faker.readthedocs.io/
+            licenca: MIT
+            nota: gera dado sintético do zero
+          - nome: Synthea
+            url: https://synthetichealth.github.io/synthea/
+            licenca: Apache-2.0
+            nota: massa sintética realista para saúde
+      - id: A.8.34
+        titulo: Proteção de sistemas de informação durante os testes de auditoria
+        objetivo: Planejar e acordar testes de auditoria para minimizar impacto na operação.
+        ferramentas:
+          - nome: OpenVAS / Greenbone
+            url: https://www.greenbone.net/
+            licenca: GPL-2.0
+            nota: permite agendar e limitar a intensidade da varredura
+          - nome: Teleport
+            url: https://goteleport.com/
+            licenca: AGPL-3.0
+            nota: acesso temporário e gravado para o auditor
+          - nome: Zabbix
+            url: https://www.zabbix.com/
+            licenca: AGPL-3.0
+            nota: acompanha o impacto do teste em tempo real
+          - nome: Wazuh
+            url: https://wazuh.com/
+            licenca: GPL-2.0
+            nota: registra a atividade do auditor para o relatório
