@@ -59,9 +59,14 @@ O **HashiCorp Vault** aparece marcado como `BUSL-1.1 (não OSI)`: a licença
 deixou de ser livre em 2023. O [OpenBao](https://openbao.org/) é a derivação
 mantida pela Linux Foundation e é a recomendação quando a licença importa.
 
-O **Graylog** usa SSPL em parte do produto, licença que a Open Source
-Initiative não reconhece como livre. Está no catálogo pela utilidade, com a
-ressalva registrada.
+O **Graylog** usa SSPL em parte do produto e o **Outline** usa BSL 1.1,
+licenças que a Open Source Initiative não reconhece como livres. Os dois estão
+no catálogo pela utilidade, com a ressalva registrada e, no caso do Outline,
+com [Wiki.js](https://js.wiki/) e [BookStack](https://www.bookstackapp.com/)
+indicados como equivalentes livres.
+
+O **Fleet** é de licença mista: o núcleo é MIT e o diretório `ee/` é comercial.
+Para o uso previsto aqui, o núcleo basta.
 
 ## Estrutura
 

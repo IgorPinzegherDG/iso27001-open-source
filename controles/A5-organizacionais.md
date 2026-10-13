@@ -59,6 +59,7 @@ Manter um conjunto de políticas aprovado pela direção, publicado para quem pr
 | [Wiki.js](https://js.wiki/) | AGPL-3.0 | versiona a política, registra quem leu e quando, e mantém o histórico de revisão que o auditor pede |
 | [BookStack](https://www.bookstackapp.com/) | MIT | alternativa mais simples, com organização por prateleira e livro |
 | [Eramba Community](https://www.eramba.org/) | AGPL-3.0 | GRC que trata política como objeto com dono, ciclo de revisão e aceite registrado |
+| [Outline](https://www.getoutline.com/) | BSL 1.1 (não OSI) | base de conhecimento com busca boa e permissão por coleção; licença não é livre, veja Wiki.js ou BookStack |
 
 ## A.5.2 Papéis e responsabilidades pela segurança da informação
 
@@ -137,6 +138,7 @@ Manter inventário de ativos com dono identificado.
 | [GLPI](https://glpi-project.org/) | GPL-3.0 | inventário com descoberta automática de rede e vínculo a chamados |
 | [NetBox](https://netboxlabs.com/oss/netbox/) | Apache-2.0 | fonte de verdade de infraestrutura, endereçamento e racks |
 | [osquery](https://www.osquery.io/) | Apache-2.0/GPL-2.0 | levanta software e hardware da frota por consulta SQL |
+| [Fleet](https://fleetdm.com/) | MIT (núcleo; o diretório ee/ é comercial) | servidor para o osquery em escala, com política por máquina e relatório de desvio |
 
 ## A.5.10 Uso aceitável de informações e outros ativos associados
 
@@ -415,7 +417,8 @@ Verificar regularmente se o que está escrito é o que acontece.
 | Ferramenta | Licença | Por que serve aqui |
 |---|---|---|
 | [OpenSCAP](https://www.open-scap.org/) | LGPL-2.1 | mede a aderência técnica à norma interna |
-| [osquery + Fleet](https://fleetdm.com/) | MIT | consulta a frota inteira e mostra o desvio por máquina |
+| [osquery](https://www.osquery.io/) | Apache-2.0/GPL-2.0 | consulta a frota inteira e mostra o desvio por máquina |
+| [Fleet](https://fleetdm.com/) | MIT (núcleo; o diretório ee/ é comercial) | servidor para o osquery em escala, com política por máquina e relatório de desvio |
 | [Wazuh](https://wazuh.com/) | GPL-2.0 | monitora conformidade de configuração continuamente |
 
 ## A.5.37 Procedimentos operacionais documentados
@@ -427,3 +430,4 @@ Documentar os procedimentos e disponibilizá-los a quem precisa executá-los.
 | [BookStack](https://www.bookstackapp.com/) | MIT | procedimento organizado e pesquisável |
 | [Wiki.js](https://js.wiki/) | AGPL-3.0 | com versionamento em Git, que dá rastreabilidade de alteração |
 | [Ansible](https://www.ansible.com/) | GPL-3.0 | o procedimento vira código executável, eliminando a diferença entre o escrito e o feito |
+| [Outline](https://www.getoutline.com/) | BSL 1.1 (não OSI) | base de conhecimento com busca boa e permissão por coleção; licença não é livre, veja Wiki.js ou BookStack |

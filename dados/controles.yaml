@@ -25,6 +25,11 @@ temas:
             url: https://www.eramba.org/
             licenca: AGPL-3.0
             nota: GRC que trata política como objeto com dono, ciclo de revisão e aceite registrado
+          - nome: Outline
+            url: https://www.getoutline.com/
+            licenca: BSL 1.1 (não OSI)
+            nota: base de conhecimento com busca boa e permissão por coleção; licença não é livre, veja
+              Wiki.js ou BookStack
       - id: A.5.2
         titulo: Papéis e responsabilidades pela segurança da informação
         objetivo: Definir e atribuir formalmente quem responde por cada atividade de segurança.
@@ -145,6 +150,10 @@ temas:
             url: https://www.osquery.io/
             licenca: Apache-2.0/GPL-2.0
             nota: levanta software e hardware da frota por consulta SQL
+          - nome: Fleet
+            url: https://fleetdm.com/
+            licenca: MIT (núcleo; o diretório ee/ é comercial)
+            nota: servidor para o osquery em escala, com política por máquina e relatório de desvio
       - id: A.5.10
         titulo: Uso aceitável de informações e outros ativos associados
         objetivo: Definir e comunicar as regras de uso dos ativos, com aceite registrado.
@@ -609,10 +618,14 @@ temas:
             url: https://www.open-scap.org/
             licenca: LGPL-2.1
             nota: mede a aderência técnica à norma interna
-          - nome: osquery + Fleet
-            url: https://fleetdm.com/
-            licenca: MIT
+          - nome: osquery
+            url: https://www.osquery.io/
+            licenca: Apache-2.0/GPL-2.0
             nota: consulta a frota inteira e mostra o desvio por máquina
+          - nome: Fleet
+            url: https://fleetdm.com/
+            licenca: MIT (núcleo; o diretório ee/ é comercial)
+            nota: servidor para o osquery em escala, com política por máquina e relatório de desvio
           - nome: Wazuh
             url: https://wazuh.com/
             licenca: GPL-2.0
@@ -633,6 +646,11 @@ temas:
             url: https://www.ansible.com/
             licenca: GPL-3.0
             nota: o procedimento vira código executável, eliminando a diferença entre o escrito e o feito
+          - nome: Outline
+            url: https://www.getoutline.com/
+            licenca: BSL 1.1 (não OSI)
+            nota: base de conhecimento com busca boa e permissão por coleção; licença não é livre, veja
+              Wiki.js ou BookStack
   - id: A.6
     nome: Controles de pessoas
     controles:
@@ -859,10 +877,14 @@ temas:
             url: https://www.ansible.com/
             licenca: GPL-3.0
             nota: aplica bloqueio automático de tela em toda a frota
-          - nome: osquery + Fleet
-            url: https://fleetdm.com/
-            licenca: MIT
+          - nome: osquery
+            url: https://www.osquery.io/
+            licenca: Apache-2.0/GPL-2.0
             nota: verifica se o bloqueio de tela está mesmo ativo em cada máquina
+          - nome: Fleet
+            url: https://fleetdm.com/
+            licenca: MIT (núcleo; o diretório ee/ é comercial)
+            nota: servidor para o osquery em escala, com política por máquina e relatório de desvio
           - nome: Wazuh
             url: https://wazuh.com/
             licenca: GPL-2.0
@@ -990,10 +1012,14 @@ temas:
             url: https://wazuh.com/
             licenca: GPL-2.0
             nota: agente em cada estação com detecção, inventário e conformidade
-          - nome: osquery + Fleet
-            url: https://fleetdm.com/
-            licenca: MIT
+          - nome: osquery
+            url: https://www.osquery.io/
+            licenca: Apache-2.0/GPL-2.0
             nota: visibilidade da frota por consulta SQL
+          - nome: Fleet
+            url: https://fleetdm.com/
+            licenca: MIT (núcleo; o diretório ee/ é comercial)
+            nota: servidor para o osquery em escala, com política por máquina e relatório de desvio
           - nome: LUKS / cryptsetup
             url: https://gitlab.com/cryptsetup/cryptsetup
             licenca: GPL-2.0
@@ -1342,10 +1368,14 @@ temas:
             url: https://pulpproject.org/
             licenca: GPL-2.0
             nota: repositório interno que define o que pode ser instalado
-          - nome: osquery + Fleet
-            url: https://fleetdm.com/
-            licenca: MIT
+          - nome: osquery
+            url: https://www.osquery.io/
+            licenca: Apache-2.0/GPL-2.0
             nota: detecta software não autorizado já instalado
+          - nome: Fleet
+            url: https://fleetdm.com/
+            licenca: MIT (núcleo; o diretório ee/ é comercial)
+            nota: servidor para o osquery em escala, com política por máquina e relatório de desvio
       - id: A.8.20
         titulo: Segurança de redes
         objetivo: Gerenciar e controlar redes para proteger a informação que trafega.

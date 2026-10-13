@@ -8,7 +8,7 @@ O caminho inverso: dada uma ferramenta, quais controles ela ajuda a
 atender. Útil para decidir o que implantar primeiro, já que algumas
 cobrem muita coisa de uma vez.
 
-177 ferramentas distintas.
+178 ferramentas distintas.
 
 | Ferramenta | Licença | Controles | Quantos |
 |---|---|---|---|
@@ -20,13 +20,14 @@ cobrem muita coisa de uma vez.
 | [Zabbix](https://www.zabbix.com/) | AGPL-3.0 | A.5.22, A.7.5, A.7.11, A.8.6, A.8.17, A.8.34 | 6 |
 | [Ansible](https://www.ansible.com/) | GPL-3.0 | A.5.30, A.5.37, A.7.7, A.8.9, A.8.19 | 5 |
 | [Documenso](https://documenso.com/) | AGPL-3.0 | A.5.4, A.5.10, A.5.20, A.6.2, A.6.6 | 5 |
+| [Fleet](https://fleetdm.com/) | MIT (núcleo; o diretório ee/ é comercial) | A.5.9, A.5.36, A.7.7, A.8.1, A.8.19 | 5 |
 | [Mayan EDMS](https://www.mayan-edms.com/) | Apache-2.0 | A.5.13, A.5.20, A.5.33, A.6.6, A.8.10 | 5 |
 | [NetBox](https://netboxlabs.com/oss/netbox/) | Apache-2.0 | A.5.9, A.7.1, A.7.3, A.7.8, A.7.12 | 5 |
+| [osquery](https://www.osquery.io/) | Apache-2.0/GPL-2.0 | A.5.9, A.5.36, A.7.7, A.8.1, A.8.19 | 5 |
 | [Teleport](https://goteleport.com/) | AGPL-3.0 | A.5.18, A.6.7, A.8.2, A.8.18, A.8.34 | 5 |
 | [Wiki.js](https://js.wiki/) | AGPL-3.0 | A.5.1, A.5.10, A.5.27, A.5.37, A.7.6 | 5 |
 | [Home Assistant](https://www.home-assistant.io/) | Apache-2.0 | A.7.1, A.7.2, A.7.3, A.7.5 | 4 |
 | [OrangeHRM](https://www.orangehrm.com/) | GPL-2.0 | A.5.2, A.6.1, A.6.2, A.6.4 | 4 |
-| [osquery + Fleet](https://fleetdm.com/) | MIT | A.5.36, A.7.7, A.8.1, A.8.19 | 4 |
 | [TheHive](https://strangebee.com/thehive/) | AGPL-3.0 | A.5.5, A.5.24, A.5.26, A.6.8 | 4 |
 | [Zammad](https://zammad.com/) | AGPL-3.0 | A.5.5, A.6.4, A.6.8, A.8.32 | 4 |
 | [Apache Syncope](https://syncope.apache.org/) | Apache-2.0 | A.5.3, A.5.16, A.6.5 | 3 |
@@ -63,6 +64,7 @@ cobrem muita coisa de uma vez.
 | [OpenTofu](https://opentofu.org/) | MPL-2.0 | A.8.9, A.8.31 | 2 |
 | [OpenVAS / Greenbone](https://www.greenbone.net/) | GPL-2.0 | A.8.8, A.8.34 | 2 |
 | [OPNsense](https://opnsense.org/) | BSD-2-Clause | A.8.20, A.8.22 | 2 |
+| [Outline](https://www.getoutline.com/) | BSL 1.1 (não OSI) | A.5.1, A.5.37 | 2 |
 | [PostgreSQL Anonymizer](https://postgresql-anonymizer.readthedocs.io/) | PostgreSQL | A.8.11, A.8.33 | 2 |
 | [privacyIDEA](https://privacyidea.org/) | AGPL-3.0 | A.5.17, A.8.5 | 2 |
 | [Prometheus + Grafana](https://prometheus.io/) | Apache-2.0 | A.7.11, A.8.6 | 2 |
@@ -136,7 +138,6 @@ cobrem muita coisa de uma vez.
 | [OpenRegulatory](https://openregulatory.com/) | variável | A.5.31 | 1 |
 | [OpenSearch](https://opensearch.org/) | Apache-2.0 | A.8.15 | 1 |
 | [OpenVPN](https://openvpn.net/community/) | GPL-2.0 | A.6.7 | 1 |
-| [osquery](https://www.osquery.io/) | Apache-2.0/GPL-2.0 | A.5.9 | 1 |
 | [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) | CC BY-SA 4.0 | A.8.26 | 1 |
 | [OWASP MASVS](https://mas.owasp.org/MASVS/) | CC BY-SA 4.0 | A.8.26 | 1 |
 | [OWASP SAMM](https://owaspsamm.org/) | CC BY-SA 4.0 | A.8.25 | 1 |

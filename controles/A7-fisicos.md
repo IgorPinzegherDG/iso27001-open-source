@@ -92,7 +92,8 @@ Adotar e fazer cumprir a regra de mesa e tela limpas.
 | Ferramenta | Licença | Por que serve aqui |
 |---|---|---|
 | [Ansible](https://www.ansible.com/) | GPL-3.0 | aplica bloqueio automático de tela em toda a frota |
-| [osquery + Fleet](https://fleetdm.com/) | MIT | verifica se o bloqueio de tela está mesmo ativo em cada máquina |
+| [osquery](https://www.osquery.io/) | Apache-2.0/GPL-2.0 | verifica se o bloqueio de tela está mesmo ativo em cada máquina |
+| [Fleet](https://fleetdm.com/) | MIT (núcleo; o diretório ee/ é comercial) | servidor para o osquery em escala, com política por máquina e relatório de desvio |
 | [Wazuh](https://wazuh.com/) | GPL-2.0 | monitora a política de tela como item de conformidade |
 
 ## A.7.8 Localização e proteção de equipamentos

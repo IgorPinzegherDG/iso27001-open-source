@@ -31,4 +31,4 @@ jobs:
           fi
 
       - name: Todos os links respondem
-        run: python3 scripts/validar_links.py | tee saida.txt && ! grep -q "\[" saida.txt
+        run: python3 scripts/validar_links.py

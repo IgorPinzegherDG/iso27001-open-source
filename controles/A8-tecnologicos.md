@@ -54,7 +54,8 @@ Proteger a informação armazenada ou acessada pelos dispositivos dos usuários.
 | Ferramenta | Licença | Por que serve aqui |
 |---|---|---|
 | [Wazuh](https://wazuh.com/) | GPL-2.0 | agente em cada estação com detecção, inventário e conformidade |
-| [osquery + Fleet](https://fleetdm.com/) | MIT | visibilidade da frota por consulta SQL |
+| [osquery](https://www.osquery.io/) | Apache-2.0/GPL-2.0 | visibilidade da frota por consulta SQL |
+| [Fleet](https://fleetdm.com/) | MIT (núcleo; o diretório ee/ é comercial) | servidor para o osquery em escala, com política por máquina e relatório de desvio |
 | [LUKS / cryptsetup](https://gitlab.com/cryptsetup/cryptsetup) | GPL-2.0 | cifra de disco |
 | [USBGuard](https://usbguard.github.io/) | GPL-2.0 | controle de dispositivos removíveis |
 
@@ -250,7 +251,8 @@ Controlar a instalação de software nos sistemas em produção.
 | [Ansible](https://www.ansible.com/) | GPL-3.0 | só entra o que está no código de configuração |
 | [fapolicyd](https://github.com/linux-application-whitelisting/fapolicyd) | GPL-3.0 | lista de permissão de execução por política |
 | [Pulp](https://pulpproject.org/) | GPL-2.0 | repositório interno que define o que pode ser instalado |
-| [osquery + Fleet](https://fleetdm.com/) | MIT | detecta software não autorizado já instalado |
+| [osquery](https://www.osquery.io/) | Apache-2.0/GPL-2.0 | detecta software não autorizado já instalado |
+| [Fleet](https://fleetdm.com/) | MIT (núcleo; o diretório ee/ é comercial) | servidor para o osquery em escala, com política por máquina e relatório de desvio |
 
 ## A.8.20 Segurança de redes
 
